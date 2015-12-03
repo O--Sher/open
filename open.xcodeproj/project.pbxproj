@@ -21,6 +21,8 @@
 		44B610F31A1112E5003C5AAE /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 44B610D51A1112E5003C5AAE /* UIKit.framework */; };
 		44B610FB1A1112E6003C5AAE /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 44B610F91A1112E6003C5AAE /* InfoPlist.strings */; };
 		44B610FD1A1112E6003C5AAE /* openTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 44B610FC1A1112E6003C5AAE /* openTests.m */; };
+		44B611071A1113E5003C5AAE /* images.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 44B611061A1113E5003C5AAE /* images.jpeg */; };
+		44B611091A1114EF003C5AAE /* heart.png in Resources */ = {isa = PBXBuildFile; fileRef = 44B611081A1114EF003C5AAE /* heart.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +55,8 @@
 		44B610F81A1112E6003C5AAE /* openTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "openTests-Info.plist"; sourceTree = "<group>"; };
 		44B610FA1A1112E6003C5AAE /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		44B610FC1A1112E6003C5AAE /* openTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = openTests.m; sourceTree = "<group>"; };
+		44B611061A1113E5003C5AAE /* images.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = images.jpeg; path = ../../../Downloads/images.jpeg; sourceTree = "<group>"; };
+		44B611081A1114EF003C5AAE /* heart.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = heart.png; path = ../../../Downloads/heart.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,6 +116,8 @@
 		44B610D71A1112E5003C5AAE /* open */ = {
 			isa = PBXGroup;
 			children = (
+				44B611081A1114EF003C5AAE /* heart.png */,
+				44B611061A1113E5003C5AAE /* images.jpeg */,
 				44B610E01A1112E5003C5AAE /* AppDelegate.h */,
 				44B610E11A1112E5003C5AAE /* AppDelegate.m */,
 				44B610E31A1112E5003C5AAE /* Main.storyboard */,
@@ -199,6 +205,9 @@
 				LastUpgradeCheck = 0510;
 				ORGANIZATIONNAME = OSher;
 				TargetAttributes = {
+					44B610CD1A1112E5003C5AAE = {
+						DevelopmentTeam = 2JZ5ZGJWC8;
+					};
 					44B610EE1A1112E5003C5AAE = {
 						TestTargetID = 44B610CD1A1112E5003C5AAE;
 					};
@@ -229,6 +238,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				44B610EA1A1112E5003C5AAE /* Images.xcassets in Resources */,
+				44B611071A1113E5003C5AAE /* images.jpeg in Resources */,
+				44B611091A1114EF003C5AAE /* heart.png in Resources */,
 				44B610DC1A1112E5003C5AAE /* InfoPlist.strings in Resources */,
 				44B610E51A1112E5003C5AAE /* Main.storyboard in Resources */,
 			);
@@ -378,6 +389,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "open/open-Prefix.pch";
 				INFOPLIST_FILE = "open/open-Info.plist";
@@ -391,6 +403,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "open/open-Prefix.pch";
 				INFOPLIST_FILE = "open/open-Info.plist";

@@ -9,5 +9,9 @@
 #import <UIKit/UIKit.h>
 
 @interface ViewController : UIViewController
+@property (weak, nonatomic) IBOutlet UILabel *label;
+- (IBAction)button:(id)sender;
+@property (weak, nonatomic) IBOutlet UIImageView *heart;
+@property (weak, nonatomic) IBOutlet UILabel *refreshLabel;
 
 @end

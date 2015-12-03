@@ -8,14 +8,18 @@
 
 #import "ViewController.h"
 
-@interface ViewController ()
-
+@interface ViewController () {
+BOOL needRefresh;
+}
 @end
 
 @implementation ViewController
 
 - (void)viewDidLoad
 {
+    self.refreshLabel.text = @"";
+    needRefresh = NO;
+    self.label.text = @"Tap the button";
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
 }
@@ -26,4 +30,22 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (IBAction)button:(id)sender {
+    if (needRefresh == YES) {
+        [self refresh];
+    }
+    else {
+        [self.heart setImage:[UIImage imageNamed:@"heart"]];
+        self.label.text = @"В + О";
+        needRefresh = YES;
+        self.refreshLabel.text = @"Refresh";
+    }
+}
+
+-(void) refresh {
+    needRefresh = NO;
+    [self.heart setImage:nil];
+    self.label.text = @"Tap the button";
+    self.refreshLabel.text = @"";
+}
 @end
